@@ -1,6 +1,6 @@
 # spring-boot-minio-demo
 
-- 安装 `minio`[文档](https://docs.min.io/cn/)
+1. 安装 `minio`[文档](https://docs.min.io/cn/)
  - [下载](https://min.io/download) [文档](https://docs.min.io/cn/minio-server-configuration-guide.html)
  - docker 安装
    - 拉取
@@ -17,13 +17,15 @@ docker run -p 9000:9000 --name minio \
 -v ~/data/minio/config:/root/.minio \
 minio/minio server /data
 ```
-  - `docker-complse.yml` [下载](https://raw.githubusercontent.com/minio/minio/master/docs/orchestration/docker-compose/docker-compose.yaml)
+   - `docker-complse.yml` [下载](https://raw.githubusercontent.com/minio/minio/master/docs/orchestration/docker-compose/docker-compose.yaml)
 ```shell script
 wget https://raw.githubusercontent.com/minio/minio/master/docs/orchestration/docker-compose/docker-compose.yaml
 ```
-  - 运行 `docker-compose up`
-- import pageage sdk
+   - 运行 `docker-compose up`
 
+2. 引入第三方SDK
+  - [主页](https://jlefebure.com/) 
+  - [示例](https://github.com/jlefebure/spring-boot-minio-example)
 ```shell
 <dependency>
     <groupId>com.jlefebure</groupId>
