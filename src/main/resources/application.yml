@@ -1,0 +1,6 @@
+spring:
+  minio:
+    url: http://127.0.0.1:9000
+    bucket: test-01
+    access-key: admin
+    secret-key: admin123456
